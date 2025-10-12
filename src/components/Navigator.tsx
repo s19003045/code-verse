@@ -204,7 +204,7 @@ export const Navigator = ({ loading = false }: NavigatorProps) => {
       <p className="text-[11px] uppercase tracking-[0.3em] text-emerald-300/80">Creator Node</p>
       <h4 className="mt-1 text-sm font-semibold text-emerald-100">{creatorApp.title}</h4>
       <p className="mt-1 text-xs text-emerald-200/80">
-        Meet the author behind CodeVerse and explore collaboration paths.
+        Systems strategist fusing engineering rigor, product orchestration, and narrative design.
       </p>
       <button
         type="button"

@@ -1,0 +1,140 @@
+[
+  {
+    "id": "ai-posture-coach",
+    "title": "AI Posture Coach",
+    "description": "Realtime posture coaching PWA that guides workouts with camera-based feedback.",
+    "tags": ["React 19", "TypeScript", "Vite", "MediaPipe", "TensorFlow.js", "IndexedDB"],
+    "position": [-28, 0, 16],
+    "icon": "/cards/ai-posture-coach.png",
+    "link": "https://ai-posture-coach.deepwaterslife.com/",
+    "region": "Health & Fitness",
+    "features": [
+      "Realtime pose detection with MediaPipe Tasks and TensorFlow.js",
+      "Coaching cues, toasts, and accessibility-focused UX refinements",
+      "Offline-ready PWA with IndexedDB history and Web Worker inference"
+    ],
+    "applicationType": "AI posture coaching progressive web app",
+    "techSummary": "React 19 + TypeScript + Vite front end styled with Tailwind/shadcn. MediaPipe Tasks and TensorFlow.js power pose inference on a dedicated Web Worker, while IndexedDB (via idb) stores workout history. Sentry monitors runtime health and Jest covers critical units."
+  },
+  {
+    "id": "battle-visualizer",
+    "title": "Battle Visualizer MVP",
+    "description": "Interactive battle timelines and maps that replay pivotal historical conflicts.",
+    "tags": ["React 19", "Vite", "TypeScript", "Leaflet", "React Query", "Zod"],
+    "position": [16, 0, 34],
+    "icon": "/cards/battle-visualizer.png",
+    "link": "https://battle.deepwaterslife.com/",
+    "region": "History & Visualization",
+    "features": [
+      "Battle playback with synchronized map, timeline, and event markers",
+      "GeoJSON-driven overlays with dynamic legends and filtering",
+      "Data validation pipeline using Zod and custom battle scripts"
+    ],
+    "applicationType": "Historical battle visualization platform",
+    "techSummary": "React + Vite SPA that layers Leaflet/React-Leaflet mapping with TanStack Query data orchestration. Battle datasets live as JSON/GeoJSON under public/data and are schema-checked with Zod and custom validation scripts. Tailwind provides rapid theming."
+  },
+  {
+    "id": "chimpanzee-guardians",
+    "title": "Chimpanzee Guardians",
+    "description": "Story-driven conservation hub spotlighting chimpanzee habitats and actions.",
+    "tags": ["React 19", "TypeScript", "Tailwind", "Leaflet", "shadcn UI", "Vitest"],
+    "position": [-14, 0, 28],
+    "icon": "/cards/chimpanzee-guardians.png",
+    "link": "https://chimpanzee-guardians.deepwaterslife.com/",
+    "region": "Education",
+    "features": [
+      "Interactive global habitat map with narrative hotspots",
+      "Curated learning journeys with actionable conservation checklists",
+      "Phase-based UX refinements covering theming, components, and search"
+    ],
+    "applicationType": "Conservation education experience",
+    "techSummary": "React + TypeScript + Vite application styled with Tailwind and class-variance-authority. Leaflet renders habitat distribution, static JSON content under frontend/src/data fuels storytelling, and Vitest + Testing Library provide regression coverage."
+  },
+  {
+    "id": "fit-track",
+    "title": "Fit Track",
+    "description": "Fitness and nutrition tracker built to orchestrate training, meals, and progress.",
+    "tags": ["React 19", "Firebase", "React Query", "Tailwind", "PWA", "Recharts"],
+    "position": [32, 0, -6],
+    "icon": "/cards/fit-track.png",
+    "link": "http://fit-track.deepwaterslife.com/",
+    "region": "Health & Fitness",
+    "features": [
+      "Training, nutrition, and challenge modules consolidated in one PWA",
+      "Firebase Auth/Firestore/Storage integration with offline caching",
+      "Analytics dashboards and training page V2 redesign with manual QA checklist"
+    ],
+    "applicationType": "Health and workout tracking PWA",
+    "techSummary": "React + Vite front end with TanStack Query coordinating Firebase Auth, Firestore, and Storage. Tailwind + lucide-react shape the UI, while Recharts visualizes progress trends. Vite PWA plugin adds offline support and docs outline deployment/test flows."
+  },
+  {
+    "id": "party-game-hub",
+    "title": "Party Game Hub",
+    "description": "Launchpad for quick-fire party games tailored to in-person groups.",
+    "tags": ["React 19", "Vite", "Tailwind", "Zustand", "shadcn UI", "Vitest"],
+    "position": [-24, 0, -14],
+    "icon": "/cards/party-game-hub.png",
+    "link": "https://party-game-hub.deepwaterslife.com/",
+    "region": "Entertainment",
+    "features": [
+      "Ready-to-play scenarios for 8–10 players with curated prompts",
+      "Centralized game configuration and timer controls",
+      "Documentation-driven CI pipeline for lint/test/build checks"
+    ],
+    "applicationType": "Local multiplayer party launcher",
+    "techSummary": "React + TypeScript + Vite stack using Zustand for session state, Tailwind/class-variance-authority for styling, and shadcn UI components. Game content lives in src/data and docs/games, while Vitest ensures core flows stay stable."
+  },
+  {
+    "id": "slp-monitor",
+    "title": "SLP Monitor",
+    "description": "Industrial dashboard that simulates solar panel recycling line performance.",
+    "tags": ["React 19", "TypeScript", "Zustand", "Recharts", "Tailwind", "Express"],
+    "position": [6, 0, -28],
+    "icon": "/cards/slp-monitor.png",
+    "link": "http://slp-monitor.deepwaterslife.com/",
+    "region": "Industry",
+    "features": [
+      "Frontend-driven production line simulator across seven stations",
+      "Pluggable Express + ws backend scaffolded for realtime upgrades",
+      "Docker Compose workflow with shared TypeScript contracts"
+    ],
+    "applicationType": "Industrial monitoring dashboard MVP",
+    "techSummary": "Monorepo with npm workspaces: frontend (React + Tailwind + shadcn + Zustand/localforage + Recharts) and services/api (Express + ws). Shared contracts via @slp/contracts, and Docker Compose orchestrates the full stack."
+  },
+  {
+    "id": "solar-flow-wms",
+    "title": "Solar Flow WMS",
+    "description": "AGV-enabled warehouse simulator built for solar panel recycling operations.",
+    "tags": ["React 19", "TypeScript", "Konva", "Zustand", "Tailwind", "Framer Motion"],
+    "position": [24, 0, 18],
+    "icon": "/cards/solar-flow-wms.png",
+    "link": "https://solar-flow-wms.deepwaterslife.com/",
+    "region": "Industry",
+    "features": [
+      "Editable warehouse map with draggable zones, racks, and pallets",
+      "AGV path simulation with Konva canvas rendering",
+      "Roadmap covering export tools, task queues, and API integration"
+    ],
+    "applicationType": "Warehouse and AGV simulation platform",
+    "techSummary": "React + Vite application that uses Konva for 2D warehouse rendering, Zustand + LocalStorage for state persistence, and Framer Motion for micro-interactions. Documentation in docs/spec.md/tasks.md outlines the multi-phase MVP roadmap."
+  },
+  {
+    "id": "creator-garywu",
+    "title": "Creator Gary Wu",
+    "description": "An immersive node dedicated to Gary Wu — a hybrid engineer-designer who bridges software architecture, AI, and human experience across web systems, automation, and creative storytelling.",
+    "tags": ["About", "Engineering", "Design Systems", "AI Integration"],
+    "position": [2, 0, -18],
+    "icon": "/cards/creator-garywu.png",
+    "link": "https://github.com/s19003045",
+    "region": "About",
+    "features": [
+      "Software architecture leader building multi-environment Docker systems, reverse proxies, and CI/CD pipelines across Node.js, Strapi, and Refine stacks",
+      "Creator of visually immersive applications merging AI, MediaPipe vision, and Three.js spatial interactivity",
+      "Design strategist blending usability, narrative worldbuilding, and visual identity — from Ghibli-style creative systems to industrial dashboards",
+      "Mentor and system thinker advocating Spec-driven development, ISMS-based governance, and multi-tenant design",
+      "Community contributor exploring creative coding, sustainability tech, and family-centered educational projects"
+    ],
+    "applicationType": "Creator profile portal",
+    "techSummary": "A central hub representing Gary Wu’s polymath background across full-stack web engineering, DevOps orchestration, creative AI, and visual UX. Includes curated links to projects (CodeVerse, Rock-Dashboard, Party Game Hub), talks, design systems, and collaboration channels."
+  }
+]

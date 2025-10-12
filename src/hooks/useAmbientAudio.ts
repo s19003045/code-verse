@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Howl } from 'howler';
+import { Howl, Howler } from 'howler';
 import { useWorldStore } from '@store/worldStore';
 
 const AMBIENT_SRC = '/audio/ambient.mp3';
@@ -37,6 +37,32 @@ export const useAmbientAudio = () => {
       ambientRef.current = null;
     };
   }, [setMuted]);
+
+  useEffect(() => {
+    const resume = async () => {
+      try {
+        if (Howler.ctx.state === 'suspended') {
+          await Howler.ctx.resume();
+        }
+        if (!mutedRef.current) {
+          ambientRef.current?.play();
+        }
+      } catch (error) {
+        console.warn('Failed to resume ambient audio context', error);
+      } finally {
+        window.removeEventListener('pointerdown', resume);
+        window.removeEventListener('keydown', resume);
+      }
+    };
+
+    window.addEventListener('pointerdown', resume);
+    window.addEventListener('keydown', resume);
+
+    return () => {
+      window.removeEventListener('pointerdown', resume);
+      window.removeEventListener('keydown', resume);
+    };
+  }, []);
 
   useEffect(() => {
     const ambient = ambientRef.current;

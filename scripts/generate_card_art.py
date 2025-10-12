@@ -49,7 +49,7 @@ def add_title(draw: ImageDraw.ImageDraw, title: str, accent_hex: str) -> None:
     )
     draw.text(
         (padding + 28, HEIGHT - padding - text_box_height + 58),
-        "codeverse.tech",
+        "code-verse.deepwaterslife.com",
         font=subtitle_font,
         fill=hex_to_rgb(accent_hex),
     )

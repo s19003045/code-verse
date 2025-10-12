@@ -91,7 +91,7 @@ const App = () => {
         <header className="flex flex-wrap items-center justify-between gap-4">
           <div className="pointer-events-auto">
             <h1 className="text-3xl font-semibold text-slate-100">CodeVerse</h1>
-            <p className="text-sm text-slate-400">Explore immersive showcases driven by apps.json</p>
+            <p className="text-sm text-slate-400">Spatial portfolio engineered by Gary Wu • React • Three.js • Spec-driven systems</p>
           </div>
           {error ? <ErrorBanner message={error} /> : <HUDLabel />}
         </header>
@@ -116,13 +116,13 @@ const App = () => {
             className="pointer-events-auto fixed inset-x-0 bottom-6 z-40 px-6"
           >
             <div className="mx-auto max-w-md rounded-2xl border border-aurora/40 bg-slate-900/90 px-4 py-4 text-slate-100 shadow-2xl backdrop-blur">
-              <h3 className="text-sm font-semibold text-aurora">Quick Tour</h3>
+              <h3 className="text-sm font-semibold text-aurora">Welcome to the Spatial Portfolio</h3>
               <ul className="mt-2 space-y-2 text-xs text-slate-200 sm:text-sm">
-                <li><strong>Browse Projects</strong> to preview the refreshed card art and jump into any build.</li>
-                <li>Tap a project to open the <strong>Info Panel</strong> with stack notes, hero imagery, and launch links.</li>
-                <li>Use the <strong>Mini Map</strong> or <strong>Auto Tour</strong> for guided teleports across the world.</li>
-                <li>Toggle <strong>Eco Mode</strong> to stream a lighter Three.js scene over slower networks.</li>
-                <li>Need focus? Hit <strong>Reset</strong> to re-center the camera, then swipe for the next showcase.</li>
+                <li><strong>Browse Projects</strong> to inspect production-grade builds spanning AI, data viz, and industrial UX.</li>
+                <li>Open the <strong>Info Panel</strong> for architecture takeaways, governance notes, and live deployment links.</li>
+                <li>Use the <strong>Mini Map</strong> or <strong>Auto Tour</strong> to see how spatial IA plans guide navigation.</li>
+                <li>Toggle <strong>Eco Mode</strong> to experience the adaptive rendering pipeline over constrained devices.</li>
+                <li>Need a reset? Re-center the camera, then continue exploring curated systems and storytelling beats.</li>
               </ul>
               {onboardingSpotlight.length ? (
                 <div className="mt-4 flex gap-3 overflow-x-auto pb-1">
@@ -149,7 +149,7 @@ const App = () => {
                 className="mt-3 w-full rounded-lg border border-aurora/50 bg-aurora/20 px-3 py-2 text-sm font-medium text-aurora"
                 onClick={dismissOnboarding}
               >
-                Start exploring
+                Enter CodeVerse
               </button>
             </div>
           </motion.div>
@@ -159,10 +159,10 @@ const App = () => {
       {!showOnboarding && allowHint ? (
         <button
           type="button"
-          className="pointer-events-auto fixed bottom-6 left-6 z-30 rounded-full border border-aurora/40 bg-slate-900/85 px-4 py-2 text-xs font-semibold text-aurora shadow-lg backdrop-blur"
+          className="pointer-events-auto fixed bottom-28 left-4 z-30 rounded-full border border-aurora/40 bg-slate-900/85 px-4 py-2 text-xs font-semibold text-aurora shadow-lg backdrop-blur sm:bottom-8 sm:left-8"
           onClick={() => setShowOnboarding(true)}
         >
-          Show Tips
+          Revisit Tour
         </button>
       ) : null}
     </div>
