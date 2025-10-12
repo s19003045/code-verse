@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+coverage/
+
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories/files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Test artifacts
+playwright-report/
+*.spec.ts.snap
+
+# Local scripts/cache
+scripts/__pycache__/
+*.pyc
+
+# Generated assets
+public/cards/*.png
+!public/cards/README.txt
+
+# Heightmap output
+public/textures/codeverse_map_height.png
+
+# Local npm cache
+.npm-cache/
+
+# Misc
+Thumbs.db
