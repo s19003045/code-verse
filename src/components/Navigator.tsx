@@ -41,6 +41,11 @@ export const Navigator = ({ loading = false }: NavigatorProps) => {
   const isMobile = useIsMobile();
 
   const creatorApp = useMemo(() => apps.find((app) => app.id === CREATOR_ID), [apps]);
+  const [desktopCollapsed, setDesktopCollapsed] = useState(false);
+  const handleCollapse = () => {
+    setDesktopCollapsed(true);
+    vibrate(8);
+  };
 
   const tags = useMemo(() => {
     const tagSet = new Set<string>();
@@ -342,13 +347,50 @@ export const Navigator = ({ loading = false }: NavigatorProps) => {
     );
   }
 
+  if (desktopCollapsed) {
+    return (
+      <button
+        type="button"
+        className="pointer-events-auto fixed bottom-20 left-8 z-30 inline-flex items-center gap-2 rounded-full border border-slate-600/60 bg-slate-900/80 px-4 py-2 text-xs font-semibold text-slate-200 backdrop-blur transition hover:border-aurora/70 hover:text-aurora"
+        onClick={() => setDesktopCollapsed(false)}
+      >
+        <span aria-hidden>↗</span>
+        Open Navigator
+      </button>
+    );
+  }
+
   return (
-    <div className="pointer-events-auto flex w-full max-h-[72vh] flex-col gap-3 overflow-y-auto rounded-2xl border border-slate-700/60 bg-slate-900/80 px-4 py-3 backdrop-blur">
+    <div className="pointer-events-auto flex w-full max-h-[72vh] flex-col gap-3 overflow-y-auto rounded-2xl border border-slate-700/60 bg-slate-900/80 px-4 py-4 backdrop-blur">
       <div className="flex flex-wrap items-center gap-3">
         <div className="flex-1 min-w-[200px]">{searchField}</div>
         <AudioToggle />
         {renderLowPowerButton()}
         {renderAutoTourButton()}
+        <button
+          type="button"
+          className="inline-flex items-center gap-1 rounded-full border border-slate-600/70 bg-slate-950/70 px-3 py-1 text-[11px] text-slate-300 transition hover:border-aurora/70 hover:text-aurora"
+          onClick={handleCollapse}
+        >
+          <span aria-hidden>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M18 6L6 18" />
+              <path d="M6 18h6" />
+              <path d="M6 18v-6" />
+            </svg>
+          </span>
+          Collapse
+        </button>
         <div className="rounded-lg border border-slate-600/70 px-3 py-2 text-xs text-slate-300">
           {cameraMode.toUpperCase()} • {fps || '—'} FPS
         </div>

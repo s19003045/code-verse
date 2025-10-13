@@ -97,7 +97,7 @@ const App = () => {
         </header>
 
         <div className="flex flex-col items-end gap-4 md:flex-row md:items-end md:justify-between">
-          <div className="w-full max-w-3xl">
+          <div className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl">
             <Navigator loading={loading} />
           </div>
           <div className="pointer-events-auto relative z-40 w-full max-w-md">
@@ -159,7 +159,7 @@ const App = () => {
       {!showOnboarding && allowHint ? (
         <button
           type="button"
-          className="pointer-events-auto fixed bottom-28 left-4 z-30 rounded-full border border-aurora/40 bg-slate-900/85 px-4 py-2 text-xs font-semibold text-aurora shadow-lg backdrop-blur sm:bottom-8 sm:left-8"
+          className="pointer-events-auto fixed bottom-8 left-8 z-30 rounded-full border border-slate-600/50 bg-slate-900/70 px-4 py-2 text-xs font-semibold text-slate-400 shadow-lg backdrop-blur transition hover:border-aurora/50 hover:text-aurora"
           onClick={() => setShowOnboarding(true)}
         >
           Revisit Tour
