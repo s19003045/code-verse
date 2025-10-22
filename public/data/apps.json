@@ -139,19 +139,19 @@
   },
   {
     "id": "the-exchange",
-    "title": "The Exchange Platform",
-    "description": "Enterprise data exchange hub unifying streaming pipelines, analytics observability, and AI-assisted governance workflows across departments.",
-    "tags": ["Observability", "Kafka", "React 19", "TypeScript", "Tailwind", "Terraform", "Kubernetes"],
+    "title": "The Exchange",
+    "description": "互動藝術交換展覽的 React MVP，提供 Material / Emotional / Idea 三大交換體驗與沉浸式聲場。",
+    "tags": ["Interactive Art", "React 19", "Zustand", "Tailwind", "Firebase", "Web Audio", "Canvas"],
     "position": [-10, 0, 42],
     "icon": "/cards/the-exchange.png",
     "link": "https://exchange.deepwaterslife.com/",
-    "region": "Enterprise",
+    "region": "Experience",
     "features": [
-      "API gateway orchestrates multi-tenant ingestion with schema validation and lineage tagging",
-      "Kafka streaming + OpenTelemetry telemetry surfaced via Superset and Grafana for real-time monitoring",
-      "Governance console covering RBAC, SOC2/ISMS controls, carbon reporting, and risk registers"
+      "Material / Emotional / Idea 三種交換流程與匿名 persona 視覺化",
+      "Canvas Poem Wall 與 Web Audio soundscape 建立沉浸式展場",
+      "Firebase Firestore / Storage 承載匿名記憶、媒體上傳與分析指標"
     ],
-    "applicationType": "Distributed data exchange and observability suite",
-    "techSummary": "React micro-frontend backed by Kafka, PostgreSQL, MongoDB, and S3 data lakes. Terraform-managed Kubernetes clusters deliver GitOps deployments; OpenTelemetry pipelines feed Grafana/Superset dashboards and AI-assisted data quality workflows."
+    "applicationType": "互動藝術交換平台",
+    "techSummary": "React 19 + Vite + Tailwind 打造 glow-card UI；Zustand `useExchangeStore` 管理交換狀態；Firebase Firestore / Storage 支援圖片上傳與匿名記錄；Canvas PoemWall 與 Web Audio 建構聲景。"
   }
 ]

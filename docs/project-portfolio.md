@@ -90,14 +90,3 @@
 - **相關文件**：`the-exchange/AGENTS.md`、`the-exchange/docs/spec.md`、`the-exchange/docs/plan.md`、`the-exchange/docs/tasks.md`、`the-exchange/docs/style.md`。
 - **聯絡點或協作者**：未提供。
 
-
-## The Exchange
-- **專案清單與定位**：名稱 The Exchange；企業資料交換與可視化平台，旨在統合多來源 API、資料湖、DB 並提供時序分析、即時監控與異常偵測；所在位置 `本機路徑: /opt/ai-project/the-exchange`。
-- **遠端部署網址**：未提供。
-- **應用程式類型**：資料交換平台、Observability、React 19、TypeScript、Vite、Tailwind、TanStack Query、PostgreSQL、Kafka、Superset、OpenSearch/OpenTelemetry。
-- **時間軸與里程碑**：未提供。
-- **技術與架構概要**：採微前端 + API Gateway；前端以 React + Tailwind 呈現視覺化；後端整合 Kafka、PostgreSQL、MongoDB、S3 Data Lake；Observability 以 OpenTelemetry + Grafana + Superset；以 GitOps + Terraform + Kubernetes 部署。
-- **成果與媒體資源**：未提供。
-- **目前狀態與待辦**：聚焦資料蒐集管線、事件通知、RBAC 權限與 SOC2/ISMS 合規；文件涵蓋碳盤查、風險控管與資料治理。
-- **相關文件**：`the-exchange/docs/overview.md`、`the-exchange/docs/architecture.md`、`the-exchange/docs/security.md`、`the-exchange/docs/data-governance.md`、`the-exchange/docs/sre-playbook.md`。
-- **聯絡點或協作者**：作者 Gary Wu。
