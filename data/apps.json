@@ -136,5 +136,22 @@
     ],
     "applicationType": "Creator profile portal",
     "techSummary": "A central hub representing Gary Wu’s polymath background across full-stack web engineering, DevOps orchestration, creative AI, and visual UX. Includes curated links to projects (CodeVerse, Rock-Dashboard, Party Game Hub), talks, design systems, and collaboration channels."
+  },
+  {
+    "id": "the-exchange",
+    "title": "The Exchange Platform",
+    "description": "Enterprise data exchange hub unifying streaming pipelines, analytics observability, and AI-assisted governance workflows across departments.",
+    "tags": ["Observability", "Kafka", "React 19", "TypeScript", "Tailwind", "Terraform", "Kubernetes"],
+    "position": [-10, 0, 42],
+    "icon": "/cards/the-exchange.png",
+    "link": "https://exchange.deepwaterslife.com/",
+    "region": "Enterprise",
+    "features": [
+      "API gateway orchestrates multi-tenant ingestion with schema validation and lineage tagging",
+      "Kafka streaming + OpenTelemetry telemetry surfaced via Superset and Grafana for real-time monitoring",
+      "Governance console covering RBAC, SOC2/ISMS controls, carbon reporting, and risk registers"
+    ],
+    "applicationType": "Distributed data exchange and observability suite",
+    "techSummary": "React micro-frontend backed by Kafka, PostgreSQL, MongoDB, and S3 data lakes. Terraform-managed Kubernetes clusters deliver GitOps deployments; OpenTelemetry pipelines feed Grafana/Superset dashboards and AI-assisted data quality workflows."
   }
 ]

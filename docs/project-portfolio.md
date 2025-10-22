@@ -79,3 +79,25 @@
 - **相關文件**：`solar-flow-wms/docs/spec.md`、`solar-flow-wms/docs/tasks.md`、`solar-flow-wms/docs/plan.md`、`solar-flow-wms/README.md`。
 - **聯絡點或協作者**：開發者 s19003045。
 
+## The Exchange
+- **專案清單與定位**：名稱 The Exchange（交換場）；互動藝術交換展覽的 React 前端 MVP，提供 Material / Emotional / Idea 三大交換體驗、沉浸式音場與匿名 persona 可視化；所在位置 `本機路徑: /opt/ai-project/the-exchange`。
+- **遠端部署網址**：未提供。
+- **應用程式類型**：互動藝術網站、匿名交換體驗、React 19、Vite、Tailwind、Zustand、Firebase Firestore / Storage、Web Audio API、Canvas 動態詩牆。
+- **時間軸與里程碑**：`docs/spec.md`（v0.9）與 `docs/plan.md`（v1.0）規劃 5 週 MVP 行程（Phase 1–5：架構→Material→Emotional→Idea→視覺與部署）；截至 2025-10-22 尚未記錄實際上線日期或完成狀態。
+- **技術與架構概要**：前端以 React + TypeScript + Vite 打造，Tailwind 定義 glow-card 主題；Zustand `useExchangeStore` 協調 Material / Emotional / Idea 狀態、Firebase 交換流程、匿名記憶 `memoryLog` 與 `analytics` 指標；Firebase Firestore / Storage 綁定 `.env` 參數並支援 emulator；`components/PoemWall.tsx` 以 Canvas 渲染動態詩牆、`sound/soundscape.ts` 啟動背景聲景、`components/ExchangePersona.tsx` 依交換 ID 生成幾何 persona；`firebase/services.ts` 處理圖片上傳、匿名交換抽樣與 idea 池訂閱。
+- **成果與媒體資源**：`exchange-mvp/dist/` 提供最新打包輸出；`public/sounds/*` 收錄背景音場素材；尚未附線上展演或影片。
+- **目前狀態與待辦**：前端頁面（Landing、Gallery、Material / Emotional / Idea Exchange）與 Firebase 互動邏輯皆已實作，`src/__tests__/routing.test.tsx` 覆蓋基本路由；仍需提供實際 Firebase 組態、Firestore 規則與 Hosting 部署，Plan / Tasks 中列出的可選動畫、AI 擴充與安全測試尚未完成。
+- **相關文件**：`the-exchange/AGENTS.md`、`the-exchange/docs/spec.md`、`the-exchange/docs/plan.md`、`the-exchange/docs/tasks.md`、`the-exchange/docs/style.md`。
+- **聯絡點或協作者**：未提供。
+
+
+## The Exchange
+- **專案清單與定位**：名稱 The Exchange；企業資料交換與可視化平台，旨在統合多來源 API、資料湖、DB 並提供時序分析、即時監控與異常偵測；所在位置 `本機路徑: /opt/ai-project/the-exchange`。
+- **遠端部署網址**：未提供。
+- **應用程式類型**：資料交換平台、Observability、React 19、TypeScript、Vite、Tailwind、TanStack Query、PostgreSQL、Kafka、Superset、OpenSearch/OpenTelemetry。
+- **時間軸與里程碑**：未提供。
+- **技術與架構概要**：採微前端 + API Gateway；前端以 React + Tailwind 呈現視覺化；後端整合 Kafka、PostgreSQL、MongoDB、S3 Data Lake；Observability 以 OpenTelemetry + Grafana + Superset；以 GitOps + Terraform + Kubernetes 部署。
+- **成果與媒體資源**：未提供。
+- **目前狀態與待辦**：聚焦資料蒐集管線、事件通知、RBAC 權限與 SOC2/ISMS 合規；文件涵蓋碳盤查、風險控管與資料治理。
+- **相關文件**：`the-exchange/docs/overview.md`、`the-exchange/docs/architecture.md`、`the-exchange/docs/security.md`、`the-exchange/docs/data-governance.md`、`the-exchange/docs/sre-playbook.md`。
+- **聯絡點或協作者**：作者 Gary Wu。

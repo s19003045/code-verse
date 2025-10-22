@@ -319,6 +319,31 @@ def draw_creator_sanctum(draw: ImageDraw.ImageDraw) -> None:
     draw.arc([(430, 40), (590, 200)], start=200, end=320, fill=(56, 189, 248, 90), width=4)
 
 
+def draw_the_exchange(draw: ImageDraw.ImageDraw) -> None:
+    draw.rounded_rectangle([(80, 80), (WIDTH - 80, HEIGHT - 140)], radius=30, fill=(8, 24, 44, 200), outline=(56, 189, 248, 140), width=3)
+
+    title_font = ImageFont.truetype(FONT_PATH, 36)
+    subtitle_font = ImageFont.truetype(FONT_PATH, 20)
+    metric_font = ImageFont.truetype(FONT_PATH, 16)
+
+    draw.text((100, 100), "The Exchange", font=title_font, fill=(224, 242, 254, 255))
+    draw.text((100, 146), "Data Exchange & Observability", font=subtitle_font, fill=(186, 230, 253, 255))
+
+    # lanes = [(100, 200, "Streaming"), (100, 238, "Governance"), (100, 276, "Insight")]
+    # for x, y, label in lanes:
+    #     draw.rounded_rectangle([(x, y), (x + 160, y + 32)], radius=12, fill=(13, 148, 136, 210))
+    #     draw.text((x + 12, y + 6), label, font=metric_font, fill=(240, 253, 244, 255))
+
+    # panel = [(WIDTH - 240, HEIGHT - 128), (WIDTH - 96, HEIGHT - 72)]
+    # draw.rounded_rectangle(panel, radius=14, fill=(56, 189, 248, 220))
+    # draw.text((panel[0][0] + 12, panel[0][1] + 10), "code-verse.deepwaterslife", font=ImageFont.truetype(FONT_PATH, 16), fill=(4, 12, 24, 255))
+
+    # draw.rectangle([(WIDTH - 230, 190), (WIDTH - 110, 260)], outline=(13, 148, 136, 180), width=2)
+    # draw.text((WIDTH - 220, 200), "Kafka", font=metric_font, fill=(224, 242, 254, 255))
+    # draw.text((WIDTH - 220, 220), "Superset", font=metric_font, fill=(224, 242, 254, 255))
+    # draw.text((WIDTH - 220, 240), "OpenTelemetry", font=metric_font, fill=(224, 242, 254, 255))
+
+
 CARD_BLUEPRINTS = [
     {
         "id": "ai-posture-coach",
@@ -375,6 +400,13 @@ CARD_BLUEPRINTS = [
         "gradient": ("020617", "0f766e"),
         "accent": "5eead4",
         "drawer": draw_creator_sanctum,
+    },
+    {
+        "id": "the-exchange",
+        "title": "The Exchange",
+        "gradient": ("011627", "0ea5e9"),
+        "accent": "7dd3fc",
+        "drawer": draw_the_exchange,
     },
 ]
 

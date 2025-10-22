@@ -1,6 +1,6 @@
 {
   "name": "codeverse",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Interactive 3D world portfolio experience.",
   "scripts": {
     "dev": "vite",
